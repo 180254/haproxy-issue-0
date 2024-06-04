@@ -12,9 +12,9 @@ Step 1. Start applications:
   [console3] $ ./jetty12h2c/mvnw -f jetty12h2c/pom.xml clean spring-boot:run
 
 Step 2. Start repro-haproxy:
-  [console3] $ bash generate-test-certificate.sh
-  [console3] $ docker build -t repro-haproxy:latest repro-haproxy
-  [console3] $ docker run --name issue-haproxy --net host --rm repro-haproxy:latest
+  [console4] $ bash generate-test-certificate.sh
+  [console4] $ docker build -t repro-haproxy:latest repro-haproxy
+  [console4] $ docker run --name issue-haproxy --net host --rm repro-haproxy:latest
 
 Step 3. Make sure that standalone app works
   - tomcat10h2c
